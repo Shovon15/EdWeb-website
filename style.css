@@ -1,11 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 /* ----------------------------------Banner Slider-------------------------------------- */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* .height{
     width: 100%;
     height: 20%;
 } */
 .carousel-item img{
     filter: brightness(40%);
+    /* background-repeat: no-repeat; */
 }
 /* .carousel-caption{
     font-size: 16px;
