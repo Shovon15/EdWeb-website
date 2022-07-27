@@ -3,14 +3,20 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-/* .height{
-    width: 100%;
-    height: 20%;
-} */
 .carousel-item img{
     filter: brightness(40%);
-    /* background-repeat: no-repeat; */
 }
-/* .carousel-caption{
-    font-size: 16px;
-} */
+.global-btn{
+    background-color: #6b1dfd;
+    color: white;
+    border: none;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+.global-btn:hover{
+    background-color: #3b0899;
+    color: white;
+
+}
