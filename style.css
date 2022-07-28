@@ -3,7 +3,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.carousel-item img{
+.banner_img {
     filter: brightness(40%);
 }
 .global-btn{
@@ -19,4 +19,7 @@ body{
     background-color: #3b0899;
     color: white;
 
+}
+.h{
+    height: 300px;
 }
