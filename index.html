@@ -10,7 +10,7 @@
     <!------------------ Bootstrap CDN ------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <!-------------- custom css--------------- -->
+    <!-------------- custom css--------------- -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -18,9 +18,10 @@
     <header>
         <!--------------------------------------Nav bar----------------------------------------->
         <section>
-            <nav class="navbar navbar-expand-lg bg-color shadow py-3">
+            <nav class="navbar navbar-expand-lg py-3">
                 <div class="container-fluid">
-                    <a class="navbar-brand ms-4" href="#"><span>Ed</span><span>Web</span></a>
+                    <a class="navbar-brand ms-4 logo-style" href="#"><span class="logo-style-1">Ed</span><span
+                            class="logo-style-2">Web</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,33 +30,33 @@
                     <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                             <li class="nav-item mx-3">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#courses">Courses</a>
+                                <a class="nav-link mx-3 fw-bold" href="#courses">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#explore">Explore</a>
+                                <a class="nav-link mx-3 fw-bold" href="#explore">Explore</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#success">Success</a>
+                                <a class="nav-link mx-3 fw-bold" href="#success">Success</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#register">Register</a>
+                                <a class="nav-link mx-3 fw-bold" href="#register">Register</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-3" href="#about">About</a>
+                                <a class="nav-link mx-3 fw-bold" href="#about">About</a>
                             </li>
-                            <button class="btn btn-outline-success mx-5 " type="submit">Register</button>
+                            <button class="btn btn-outline-primary mx-5 px-4" type="submit">Register</button>
                         </ul>
                     </div>
                 </div>
             </nav>
         </section>
         <!--------------------------------------Banner slider section----------------------------------------->
-        <section class="container mt-2">
-            <div id="carouselExampleCaptions" class="carousel slide h-50 d-inline-block" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+        <section class="container">
+            <div id="carouselExampleCaptions" class="carousel slide d-inline-block" data-bs-ride="carousel">
+                <div class="carousel-indicators mb-0">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -65,35 +66,37 @@
                 </div>
                 <div class="carousel-inner height rounded">
                     <div class="carousel-item active">
-                        <img src="./images/cover/cover-1.png" class="banner_img img-fluid d-block w-100" alt="cover-1.jpg">
+                        <img src="./images/cover/cover-1.png" class="banner_img img-fluid d-block w-100"
+                            alt="cover-1.jpg">
+                        <div class="carousel-caption pt-0">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h1 style="font-size: 5vw;">The perfect venue for your next event</h1>
+                                <p style="font-size: 2vw;">Build your career in the IT industry's most demanded
+                                    technologies.</p>
+                                <button type="button" class="btn btn-primary px-5 py-2 flex-fill">Book
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/cover/cover-2.jpg" class="banner_img img-fluid d-block w-100"
+                            alt="cover-2.jpg">
                         <div class="carousel-caption d-md-block">
-                            <h1>The perfect venue for<br> your next event</h1>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br> Velit
-                                officia
-                                consequat duis enim velit</p>
-                            <button type="button" class="btn btn-primary mb-4 px-5 py-2 bg-light text-primary">Book
+                            <h1 style="font-size: 5vw;">The perfect venue for your next event</h1>
+                            <p style="font-size: 2vw;">Build your career in the IT industry's most demanded
+                                technologies.</p>
+                            <button type="button" class="btn btn-primary px-5 py-2">Book
                                 Now</button>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/cover/cover-2.jpg" class="img-fluid d-block w-100" alt="cover-2.jpg">
+                        <img src="./images/cover/cover-3.jpg" class="banner_img img-fluid d-block w-100"
+                            alt="cover-3.jpg">
                         <div class="carousel-caption d-md-block">
-                            <h1>The perfect venue for<br> your next event</h1>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br> Velit
-                                officia
-                                consequat duis enim velit</p>
-                            <button type="button" class="btn btn-primary mb-4 px-5 py-2 bg-light text-primary">Book
-                                Now</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/cover/cover-3.jpg" class="img-fluid d-block w-100" alt="cover-3.jpg">
-                        <div class="carousel-caption d-md-block">
-                            <h1>The perfect venue for <br>your next event</h1>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.<br> Velit
-                                officia
-                                consequat duis enim velit</p>
-                            <button type="button" class="btn btn-primary mb-4 px-5 py-2 bg-light text-primary">Book
+                            <h1 style="font-size: 5vw;">The perfect venue for your next event</h1>
+                            <p style="font-size: 2vw;">Build your career in the IT industry's most demanded
+                                technologies.</p>
+                            <button type="button" class="btn btn-primary px-5 py-2">Book
                                 Now</button>
                         </div>
                     </div>
@@ -115,10 +118,11 @@
     <main>
         <!--------------------------------------------------Course section------------------------------>
         <section id="courses">
-            <div class="container w-100 mt-4">
+            <div class="container mt-5">
                 <div class="text-center m-2 text-wrap">
-                    <h2>Choose your<br> favourite courses</h2>
-                    <p class="p-2">It is a long established fact that a reader will be distracted by the readable<br>
+                    <h1>Choose your<br> favourite courses</h1>
+                    <p class="p-2 text-secondary">It is a long established fact that a reader will be distracted by the
+                        readable<br>
                         content of a page when looking at its layout.</p>
                 </div>
                 <div class="row">
@@ -131,9 +135,9 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Fundamental UI/UX Design</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
@@ -146,9 +150,9 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Javascript Basic to advanced</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
@@ -161,9 +165,9 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Fullstack Web Development</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
@@ -176,9 +180,9 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Digital Marketing</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
@@ -191,9 +195,9 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Photography Basic Rules</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
@@ -206,35 +210,40 @@
                                 </div>
                                 <div class="p-3">
                                     <h4>Motion Graphics</h4>
-                                    <p>Some quick example text to build on the card title
+                                    <p class="text-secondary">Some quick example text to build on the card title
                                         and make up the bulk of the card.</p>
-                                    <p>Price : 20$</p>
+                                    <p class="price-color fw-bold">Price : 20$</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 text-center m-4">
-                    <button type="button" class="btn btn-primary">View more</button>
+                <div class="col-md-12 text-center my-4">
+                    <button type="button" class="btn btn-outline-primary my-4">View more</button>
                 </div>
             </div>
         </section>
         <!-------------------------------------------Explore section---------------------------------------->
         <section id="explore">
             <div class="container d-md-flex flex-sm-column flex-md-row flex-lg-row  bg-light mt-5">
-                <div class="col-12 col-md-12 col-lg-6">
-                    <img class="" src="./images/working.png" alt="">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img class="img-fluid" src="./images/working.png" alt="">
                 </div>
-                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center mx-5  p-4">
-                    <h1>Explore The elearning Institute</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sequi odit nesciunt
-                        voluptas doloremque sapiente dolorum ipsum illo. Placeat est vitae nulla corrupti tempora fuga
-                        fugit quasi architecto, aperiam voluptatum odit delectus ratione voluptatibus vero ad
-                        itaque.<br><br>
-                        Pariatur facilis delectus non tempora fuga consequatur, ipsam odit, ipsum ab provident
-                        labore.Pariatur facilis delectus non tempora fuga consequatur, ipsam odit, ipsum ab provident
-                        labore.
-                    </p>
+                <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center px-4">
+                    <h1 class="mt-3">Explore The elearning Institute</h1>
+                    <input type="checkbox" id="check">
+                    <p class="mb-0">Developing coding skills can help you find a new job, earn a promotion, or gain
+                        access to careers with higher pay and more flexibility. Whether you’re switching careers or are
+                        already in the tech industry, building coding skills can create new job opportunities.</p>
+                    <div class="content">
+                        <p class="mb-0"> In particular, jobs requiring tech skills are typically in high demand, and
+                            these types of roles also usually have high salaries with flexibility for remote work.<br>
+                            <br>Most importantly, learning to code makes tech careers more accessible for people who may
+                            not have had a linear professional path. Take Kate, a Codecademy learner who was a
+                            stay-at-home mom before learning to code. She got her start by picking up a kids’ book on
+                            HTML.</p>
+                    </div>
+                    <label for="check" class="mb-4">See more</label>
                     <div class="d-flex justify-content-between">
                         <h1>3.2K+</h1>
                         <h1>600+</h1>
@@ -246,26 +255,147 @@
                         <p>Reviews</p>
                     </div>
                     <div class=" my-4">
-                        <button type="button" class="btn btn-primary">Read more</button>
+                        <button type="button" class="btn btn-outline-primary">Read more</button>
                     </div>
                 </div>
             </div>
         </section>
         <!----------------------------------------------Register section------------------------------------------->
         <section id="register">
-            <div class="container bg-success rounded my-5 py-5 px-3">
+            <div class="container bg-color rounded my-5 py-5 px-3">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 text-center ">
                         <h1>Ready to join?</h1>
-                        <p>It is a long established fact that a reader will be distracted by the
+                        <p class="text-secondary">It is a long established fact that a reader will be distracted by the
                             readable content of a page when looking at its layout.</p>
                     </div>
                     <div class="col-sm-12 col-md-6 text-center my-5 ">
-                        <button type="button" class="btn global-btn">Register Now</button>
+                        <button type="button" class="btn btn-primary px-5 py-2"data-toggle="modal" data-target="#exampleModal">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                            <button type="button" class="close rounded px-2" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="exampleInputname">Select your Course</label>
+                                    <select class="form-control">
+                                        <option>Fundamental UI/UX Design</option>
+                                        <option>Javascript Basic to advanced</option>
+                                        <option>Fullstack Web Development</option>
+                                        <option>Digital Marketing</option>
+                                        <option>Photography Basic Rules</option>
+                                        <option>Motion Graphics</option>
+                                      </select>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+        <!-- --------------------------------------------------------------- -->
+
+
+
+        <!-- <section id="success">
+            <div class="container ">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="mt-5 mb-3">Meet Our Successful
+                        Students</h1>
+                    <p class="px-4 py-2 text-wrap">It is a long established fact that a reader will be distracted by
+                        the
+                        readable content of a page when looking at its layout.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 d-md-inline-flex justify-content-center align-items-center">
+                        <div class="col-6 col-sm-6 col-md-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-fluid mx-auto" src="./images/course/course-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="class="col-6 col-sm-6 col-md-8"">
+                            <div class="text-center">
+                                <h3>Fundamental UI/UX Design</h3>
+                                <p >Some quick example text to build on the card title and make up the bulk of the card.
+                                </p>
+                                <p>Price : 20$</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 d-md-inline-flex">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="./images/course/course-2.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-2">Awlad Hossain</h3>
+                            <p class="mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur optio, quia, ab molestias accusantium odio aperiam deleniti cum consectetur eveniet iure commodi quidem, maxime reiciendis iste deserunt possimus magnam quasi dolores! Vitae reprehenderit quisquam cum ducimus asperiores, accusamus molestiae eveniet, officiis molestias similique nemo? Aliquid perferendis praesentium facere fugiat.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 d-md-inline-flex border">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="./images/course/course-3.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-2">Awlad Hossain</h3>
+                            <p>UIUX Designer</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 d-md-inline-flex border">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="./images/course/course-4.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="mt-2">Awlad Hossain</h3>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-auto ">
+                    <button type="button" class="btn btn-outline-primary">View all</button>
+                </div>
+            </div>
+
+        </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-----------------------------------------------Successful student section---------------------------------------->
         <section id="success">
@@ -273,7 +403,8 @@
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <h1 class="mt-5 mb-3">Meet Our Successful
                         Students</h1>
-                    <p class="px-4 py-2 text-wrap">It is a long established fact that a reader will be distracted by
+                    <p class="px-4 py-2 text-wrap text-secondary">It is a long established fact that a reader will be
+                        distracted by
                         the
                         readable content of a page when looking at its layout.</p>
                 </div>
@@ -284,7 +415,7 @@
                         </div>
                         <div class="text-center">
                             <h3 class="mt-2">Awlad Hossain</h3>
-                            <p>UIUX Designer</p>
+                            <p class="text-secondary">UIUX Designer</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -292,8 +423,8 @@
                             <img class="img-fluid" src="./images/student/student-2.png" alt="">
                         </div>
                         <div class="text-center">
-                            <h3 class="mt-2">Awlad Hossain</h3>
-                            <p>UIUX Designer</p>
+                            <h3 class="mt-2">Eme Jaction</h3>
+                            <p class="text-secondary">Photographer</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -301,8 +432,8 @@
                             <img class="img-fluid" src="./images/student/student-3.png" alt="">
                         </div>
                         <div class="text-center">
-                            <h3 class="mt-2">Awlad Hossain</h3>
-                            <p>UIUX Designer</p>
+                            <h3 class="mt-2">Murad Hasan</h3>
+                            <p class="text-secondary">Software Engineer</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
@@ -310,23 +441,24 @@
                             <img class="img-fluid" src="./images/student/student-4.png" alt="">
                         </div>
                         <div class="text-center">
-                            <h3 class="mt-2">Awlad Hossain</h3>
-                            <p>UI/UX Designer</p>
+                            <h3 class="mt-2">Tabassum Orni</h3>
+                            <p class="text-secondary">Web Developer</p>
                         </div>
                     </div>
                 </div>
                 <div class="text-center my-auto ">
-                    <button type="button" class="btn global-btn">View all</button>
+                    <button type="button" class="btn btn-outline-primary mt-3 mb-5">View all</button>
                 </div>
             </div>
 
         </section>
-        <!-----------------------------------------------------Review section-------------------------------------------->
+        <!-----------------------------------------------------feedback section-------------------------------------------->
         <section>
             <div class="container  mt-5">
                 <div class="text-center py-3">
                     <h1>Some Students Feedback</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable<br>
+                    <p class="text-secondary px-4">It is a long established fact that a reader will be distracted by the
+                        readable<br>
                         content of a page when looking at its layout.</p>
                 </div>
                 <div class="row">
@@ -339,19 +471,24 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
+                                        <div
+                                            class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
                                             <div class="d-flex justify-content-between">
                                                 <img src="./images/comma.png" alt="">
                                                 <div>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
                                             </div>
                                             <div class="px-4 pt-2">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit labore libero harum a voluptate? Saepe quos quasi autem eligendi fugiat corrupti! Assumenda incidunt vitae blanditiis beatae. Aut, in numquam.</p>
+                                                <p>The DevOps training has helped me understand the overview of the
+                                                    concepts. Thank you so much for the projects given. The hands-on
+                                                    experience gained is one of the best parts of the training. It was
+                                                    very encouraging to avail of certification after submission of the
+                                                    project.</p>
                                             </div>
                                             <div class="d-flex ">
                                                 <div>
@@ -363,19 +500,24 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-5 col-sm-12 border  mx-auto px-5 pt-4 my-auto bg-light rounded">
+                                        <div
+                                            class="col-md-5 col-sm-12 border  mx-auto px-5 pt-4 my-auto bg-light rounded">
                                             <div class="d-flex justify-content-between">
                                                 <img src="./images/comma.png" alt="">
                                                 <div>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
                                             </div>
                                             <div class="px-4 pt-2">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit labore libero harum a voluptate? Saepe quos quasi autem eligendi fugiat corrupti! Assumenda incidunt vitae blanditiis beatae. Aut, in numquam.</p>
+                                                <p>Talking about the course, The Instructor was good and very helpful,
+                                                    the classes were on time. And the content proved to be very
+                                                    beneficial to me. The quick support from the Technical assistance
+                                                    team was really appreciated, I’d like to thank Edureka for providing
+                                                    such a great platform.</p>
                                             </div>
                                             <div class="d-flex ">
                                                 <div>
@@ -383,7 +525,7 @@
                                                 </div>
                                                 <div class="ps-3">
                                                     <h5>Awlad Hossain</h5>
-                                                    <p class="text-secondary">UI/UX Designer</p>
+                                                    <p class="text-secondary">Software Develpoer</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -391,19 +533,24 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="row">
-                                        <div class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
+                                        <div
+                                            class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
                                             <div class="d-flex justify-content-between">
                                                 <img src="./images/comma.png" alt="">
                                                 <div>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
                                             </div>
                                             <div class="px-4 pt-2">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit labore libero harum a voluptate? Saepe quos quasi autem eligendi fugiat corrupti! Assumenda incidunt vitae blanditiis beatae. Aut, in numquam.</p>
+                                                <p>I would recommend EdWeb certification to anyone who is dedicated and
+                                                    has the discipline to learn it has its own pros and cons. I took
+                                                    Python, and Machine Learning courses independently, the course was
+                                                    thorough and covered all the important aspects of the course
+                                                    concerned.</p>
                                             </div>
                                             <div class="d-flex ">
                                                 <div>
@@ -411,23 +558,28 @@
                                                 </div>
                                                 <div class="ps-3">
                                                     <h5>Awlad Hossain</h5>
-                                                    <p class="text-secondary">UI/UX Designer</p>
+                                                    <p class="text-secondary">Degital Marketing</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
+                                        <div
+                                            class="col-md-5 col-sm-12 border mx-auto px-5 pt-4 my-auto bg-light rounded">
                                             <div class="d-flex justify-content-between">
                                                 <img src="./images/comma.png" alt="">
                                                 <div>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
                                             </div>
                                             <div class="px-4 pt-2">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugit labore libero harum a voluptate? Saepe quos quasi autem eligendi fugiat corrupti! Assumenda incidunt vitae blanditiis beatae. Aut, in numquam.</p>
+                                                <p>The interactive training course helped me very much to understand the
+                                                    concepts holistically and implement them in questions. The initial
+                                                    instructor couldn't continue due to some personal emergency and
+                                                    EdWeb assigned another instructor and the new instructor took the
+                                                    reigns.</p>
                                             </div>
                                             <div class="d-flex ">
                                                 <div>
@@ -435,7 +587,7 @@
                                                 </div>
                                                 <div class="ps-3">
                                                     <h5>Awlad Hossain</h5>
-                                                    <p class="text-secondary">UI/UX Designer</p>
+                                                    <p class="text-secondary">Photographer</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -444,12 +596,16 @@
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                                 data-slide="prev">
-                                <span class="carousel-control-prev-icon bg-danger position-absolute top-50 start-0 translate-middle" aria-hidden="true"></span>
+                                <span
+                                    class="icon-color carousel-control-prev-icon position-absolute top-50 start-0 translate-middle"
+                                    aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
                                 data-slide="next">
-                                <span class="carousel-control-next-icon bg-danger position-absolute top-50 start-100 translate-middle" aria-hidden="true"></span>
+                                <span
+                                    class="icon-color carousel-control-next-icon position-absolute top-50 start-100 translate-middle"
+                                    aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -462,8 +618,9 @@
         <section>
             <div class="container w-75 mt-5 mb-5 bg-light">
                 <div class="text-center py-4">
-                    <h1>Frequently Asked Questions</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable
+                    <h1 class="mt-5">Frequently Asked Questions</h1>
+                    <p class="text-secondary">It is a long established fact that a reader will be distracted by the
+                        readable
                         content of a page when looking at its layout.</p>
                 </div>
                 <div class="accordion" id="accordionExample">
@@ -552,7 +709,7 @@
         <!----------------------------------Company logo section----------------------------->
         <section>
             <div class="container text-center  mt-5 mb-5 d-none d-lg-block">
-                <h1 class="my-5">Trusted by over 800+ companies</h1>
+                <h1 class="my-5 mt-5">Trusted by over 500+ companies</h1>
                 <div class="row">
                     <div class=" col-lg-2 p-4">
                         <img class=" img-fluid" src="./images/company/company-1.png" alt="">
@@ -575,18 +732,24 @@
                 </div>
             </div>
         </section>
-<!----------------------------------------------------------------Footer------------------------------------->
+        <!----------------------------------------------------------------Footer------------------------------------->
         <section>
             <div class=" footer-bg text-white d-flex flex-column justify-content-center align-items-center">
-                <h1 class=" mt-5">EdWeb</h1>
+                <h1 class="logo-style mt-5">
+                    <span class="logo-style-1">Ed</span><span class="logo-style-2">Web</span>
+                </h1>
                 <p class="text-center">Office 41, Zawaya Buildin, Ghala Muscat,<br> Sultanate of Oman</p>
                 <p>Privacy Ploicy | Terms of use
                 </p>
                 <div class="icon mb-5">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook p-2"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter p-2"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin p-2"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram p-2"></i></a>
+
+
+
+
 
                 </div>
             </div>
@@ -596,7 +759,7 @@
             </div>
         </section>
 
-        
+
 
 
 

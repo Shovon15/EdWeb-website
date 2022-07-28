@@ -1,33 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-/* ----------------------------------Banner Slider-------------------------------------- */
+/* -------------------------------font style ------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* ------------------------global css-------------------- */
 body{
     font-family: 'Roboto', sans-serif;
 }
+.btn{
+	box-shadow: none !important;
+}
+/* ------------------------------------Nav section--------------------------------- */
+.logo-style{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 28px;
+}
+.logo-style-1{
+    color: #EF5B0C;
+}
+.logo-style-2{
+    color: #3b0899;
+}
+/* ----------------------------------Banner Slider-------------------------------------- */
 .banner_img {
     filter: brightness(40%);
 }
-.global-btn{
-    background-color: #6b1dfd;
-    color: white;
-    border: none;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+/* ------------------------course section------------------------------------ */
+.price-color{
+    color:#EF5B0C
 }
-.global-btn:hover{
+/* -----------------------------------explore section------------------------ */
+#check{
+    display: none;
+}
+.content{
+    display: none;
+}
+label{
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+#check:checked ~ .content{
+    display: block;
+}
+#check:checked ~ label{
+    visibility: hidden;
+}
+#check:checked ~ label:after{
+    content: 'see less';
+    display: block;
+    visibility: visible;
+}
+/* ---------------------------------------Registration section------------- */
+.bg-color{
+    background-color: #E7F6F2;
+}
+/* --------------------------------student feedback section---------------- */
+.icon-color{
     background-color: #3b0899;
-    color: white;
-
+    border-radius: 50%;
 }
-.h{
-    height: 300px;
-}
-
 /* --------------------footer section----------- */
 .footer-bg{
-    background-color: #3b0899;
+    background-color: #3F4E4F;
 }
-.icon{
+.icon a{
     font-size: 32px;
+    color:white;
 }
